@@ -1,0 +1,150 @@
+.footer {
+  background-color: var(--secondary-background);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__address {
+  display: block;
+  max-width: 231px;
+  margin-right: 70px;
+}
+
+.footer__address-item {
+  display: block;
+  .footer__address &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__nav-address {
+  color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__nav-telm {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__logo {
+  font-style: normal;
+  cursor: default;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__logo--accent {
+  color: var(--white-color);
+}
+
+.footer__address-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.footer__invite {
+  margin-right: 93px;
+}
+
+.footer__invite-title {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  margin-top: 12px;
+  cursor: default;
+}
+
+.footer__invite-list {
+  display: flex;
+}
+
+.footer__invite-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--active-text);
+  }
+}
+
+.footer__invite-icon {
+  fill: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .footer__invite-item:hover &,
+  .footer__invite-item:focus & {
+    fill: var(--white-color);
+  }
+}
+
+.footer__subscribe-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+}
+
+.footer__subscribe-form {
+  position: relative;
+}
+
+.footer__subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  background-color: var(--secondary-background);
+  margin-right: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  color: var(--white-color);
+  &:focus {
+    border-color: var(--secondary-background);
+  }
+}
+
+.footer__subscribe-btn {
+  width: 200px;
+  height: 50px;
+  background: var(--active-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+}
+
+.footer__subscribe-icon {
+  margin-left: 10px;
+}

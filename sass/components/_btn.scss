@@ -1,0 +1,14 @@
+.btn {
+  background-color: var(--active-text);
+  font-family: Roboto, sans-serif;
+  color: var(--white-color);
+  border: none;
+  font-size: 16px;
+  line-height: 1.9;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+
+  padding: 10px 32px;
+  width: 200px;
+}
