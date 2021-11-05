@@ -1,7 +1,12 @@
 .team {
   background-color: var(--third-bg-color);
-  padding-bottom: 94px;
-  padding-top: 94px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team__title {
@@ -11,11 +16,18 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-basis: calc(100% / 2 - 90);
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
@@ -26,10 +38,37 @@
   padding-bottom: 30px;
   background-color: var(--white-color);
   .team__list &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
   & > img {
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    .team__list &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    .team__list &:nth-child(2n) {
+      margin-left: 30px;
+    }
+    .team__list &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    .team__list &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    .team__list &:nth-child(2n) {
+      margin-left: 0px;
+    }
+    .team__list &:nth-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+    .team__list &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
