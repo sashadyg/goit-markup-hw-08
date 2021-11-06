@@ -9,6 +9,7 @@
   @media screen and (min-width: 767px) {
     display: none;
   }
+  z-index: 2;
 }
 
 .mob-menu__btn-close {
@@ -87,5 +88,5 @@
   transform: rotate(90deg);
   margin-left: 10px;
   margin-right: 10px;
-  weight: 22px;
+  width: 22px;
 }
