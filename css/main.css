@@ -94,10 +94,15 @@ p {
   border: none;
   font-size: 16px;
   line-height: 1.9;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
-  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 200px;
 }
 
@@ -860,7 +865,7 @@ p {
   color: var(--white-color);
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.4;
+  line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -872,6 +877,7 @@ p {
   .hero__title {
     font-size: 44px;
     margin-bottom: 40px;
+    line-height: calc(60 / 44);
   }
 }
 
@@ -1164,7 +1170,7 @@ p {
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1174,6 +1180,7 @@ p {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1375,8 +1382,7 @@ p {
 .mob-menu__social-item--decoration {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 auto;
   width: 22px;
 }
 /*# sourceMappingURL=main.css.map */
