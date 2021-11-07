@@ -1089,6 +1089,12 @@ p {
   user-select: none;
 }
 
+@media screen and (max-width: 479px) {
+  .modal__property {
+    padding-left: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal__property {
     margin-right: 11px;
