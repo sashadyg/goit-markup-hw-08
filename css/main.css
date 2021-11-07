@@ -324,7 +324,6 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   display: block;
-  width: 322px;
 }
 
 .examples__text {
@@ -333,7 +332,6 @@ p {
   line-height: 1.9;
   letter-spacing: 0.03em;
   display: block;
-  width: 322px;
 }
 
 .feature {
