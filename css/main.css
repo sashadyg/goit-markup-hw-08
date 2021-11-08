@@ -1362,10 +1362,6 @@ p {
   margin-bottom: 32px;
 }
 
-.mob-menu__contacts {
-  padding-right: 68px;
-}
-
 .mob-menu__contacts-item--tel {
   font-weight: 500;
   font-size: 34px;
